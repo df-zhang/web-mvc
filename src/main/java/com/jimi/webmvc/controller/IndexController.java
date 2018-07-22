@@ -6,6 +6,9 @@ import com.jimi.webmvc.annotatiion.ResponseBody;
 
 @Controller
 public class IndexController {
+	static {
+		System.out.println("静态代码块被执行");
+	}
 
 	@RequestMapping({ "", "/", "/index" })
 	public String index() {
